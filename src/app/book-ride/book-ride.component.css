@@ -1,0 +1,16 @@
+.flex-center {
+    width: 80%;
+    margin-top: 10%;
+}
+
+.center {
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.activebutton{
+    color:green;
+}

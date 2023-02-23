@@ -1,0 +1,13 @@
+.flex-center{
+    width:300px;
+    margin-top: 10%;
+}
+.center{
+
+    display: flex;
+    justify-content: center;
+}
+.rides{
+  justify-items: center;
+}
+

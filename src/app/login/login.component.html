@@ -1,0 +1,41 @@
+<div class="container flex-center">
+    <div class="card">
+        <div class="card-header">
+            Login
+        </div>
+        <div class="card-body">
+            <form [formGroup]="loginForm">
+                
+
+              
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Username</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                       formControlName="UserName" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default">
+                </div>
+             <div class="center" >
+           
+                <a type="button" (click)="onSubmit()" class="btn btn-primary"> Login</a>
+            </div>
+         
+                    <div class="center" *ngIf="submitted">
+                        <div *ngIf="isAuthenticated; else failureMsg">
+                            <h4>Welcome {{ username }}</h4>
+                        </div>
+                        <ng-template #failureMsg>
+                            <h4>Invalid Login !!! Please try again...</h4>
+                        </ng-template>
+                      </div>
+            </form>
+           
+       
+
+        </div>
+    </div>
+
+</div>
